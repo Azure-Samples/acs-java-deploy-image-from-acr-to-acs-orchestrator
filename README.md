@@ -4,12 +4,12 @@ languages:
 - java
 products:
 - azure
-services: Containerservice
-platforms: java
-author: yaohaizh
+extensions:
+- services: Containerservice
+- platforms: java
 ---
 
-## Getting Started with Containerservice - Deploy Image From Container Registry To Container Service Orchestrator - in Java ##
+# Getting Started with Containerservice - Deploy Image From Container Registry To Container Service Orchestrator - in Java #
 
 
   Azure Container Registry sample for deploying a container image to Azure Container Service with Kubernetes orchestration.
