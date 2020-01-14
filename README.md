@@ -4,11 +4,13 @@ languages:
 - java
 products:
 - azure
-description: "Azure Container Registry sample for deploying a container image to Azure Container Service with Kubernetes orchestration."
-urlFragment: acs-java-deploy-image-from-acr-to-acs-orchestrator
+extensions:
+- services: Containerservice
+- platforms: java
 ---
 
-# Deploy Image From Container Registry To Container Service Orchestrator (Java)
+# Getting Started with Containerservice - Deploy Image From Container Registry To Container Service Orchestrator - in Java #
+
 
   Azure Container Registry sample for deploying a container image to Azure Container Service with Kubernetes orchestration.
    - Create an Azure Container Registry to be used for holding the Docker images
@@ -25,22 +27,24 @@ urlFragment: acs-java-deploy-image-from-acr-to-acs-orchestrator
    - Create a Kubernetes replication controller using a container image from the Azure private registry from above and a load balancer service that will expose the app to the world
  
 
-## Running this sample
+## Running this Sample ##
 
 To run this sample:
 
 Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-java/blob/master/AUTH.md).
 
-```bash
-git clone https://github.com/Azure-Samples/acs-java-deploy-image-from-acr-to-acs-orchestrator.git
-cd acs-java-deploy-image-from-acr-to-acs-orchestrator
-mvn clean compile exec:java
-```
+    git clone https://github.com/Azure-Samples/acs-java-deploy-image-from-acr-to-acs-orchestrator.git
 
-## More information
+    cd acs-java-deploy-image-from-acr-to-acs-orchestrator
+
+    mvn clean compile exec:java
+
+## More information ##
 
 [http://azure.com/java](http://azure.com/java)
 
-If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212).
+If you don't have a Microsoft Azure subscription you can get a FREE trial account [here](http://go.microsoft.com/fwlink/?LinkId=330212)
+
+---
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
