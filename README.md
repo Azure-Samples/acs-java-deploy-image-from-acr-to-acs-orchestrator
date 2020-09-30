@@ -5,8 +5,8 @@ languages:
 products:
 - azure
 extensions:
-- services: Containerservice
-- platforms: java
+  services: Containerservice
+  platforms: java
 ---
 
 # Getting Started with Containerservice - Deploy Image From Container Registry To Container Service Orchestrator - in Java #
